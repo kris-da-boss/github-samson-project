@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: yellow;
+}
+
+.main__header{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center; 
+}
+
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+    }
+
+.logo{
+    border-radius: 100px;
+}
+
+.header__button{
+    padding: 0.25rem 0.5rem;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: transparent;
+    margin-left: 94%;
+    }
+
+    .header__div,
+    .header__div::before,
+    .header__div::after{
+    background-color: gray;
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    border-radius: 5px;
+    transition: all 0.5s;
+     }
+
+     .header__div::before,
+     .header__div::after {
+ content:"";
+     }
+
+     .header__div::before{
+        transform: translate(-20px, -12px)
+     }
+
+     .header__div::after{
+        transform: translate(-20px, 12px);
+     }
+
+    .section__button{
+        display: block;
+    }
+        
+
+   
+    
+    :is(.header__button:focus-within)
+
+    .header__div{
+        background-color: transparent;
+    }
+
+    :is(.header__button:focus-within)
+    .header__div::before{
+        transform: translateX(-20px)  rotate(45deg);
+    }
+   
+    :is(.header__button:focus-within)
+    .header__div::after{
+        transform: translateX(-20px) rotate(-45deg);
+    }
+
+    :is(.section__button:focus-within)
+    .asidenav{
+        display: block;
+    }
+
+   
+    
+
+    
+   /*  .section__button:hover,
+    .section__button:focus{
+        color: blue;
+        transition: all 0.3s;
+    } */
+
+    .header__section{
+       display: flex;
+}
+.asidenav{
+
+    display: none;
+    transform-origin: center;
+    background-color: rgb(3, 3, 49);
+    animation: showMenu 0.5s ease-in-out forwards;
+}
+
+@keyframes showMenu{
+    0%{
+        transform: scaleX(0);
+    }
+    80%{
+        transform: scaleX(1.2);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+   
+
+nav ul {
+    display: grid;
+    gap: 80px;
+    text-align: right;
+    margin-right: 1em;
+    list-style-type:none;
+   }
+   
+  nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2rem;
+   }
+   nav a:hover, 
+   :focus{
+    color: rgba(0, 255, 255, 0.39);
+   }
+   
+   .header__nav{
+    background-color: blue;
+    padding: 1rem;
+   }
+  
+
+
+   .header__ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+ }
+  main img{
+    min-width: auto;
+    min-height: auto;
+}
+
+   .welcome{
+    background-color: rgb(3, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    height: 7rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 10px;
+     }
+     .mindbase{
+        background-color:rgb(3, 53, 53);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        color: whitesmoke;
+        gap: 10px;
+        padding-bottom: 5rem;
+     }
+     .Section__club{
+        transform: translatey(5rem);
+        margin-left: 2rem;
+        margin-right: 2rem;
+        display: flex;
+     }
+
+
+     .cover__club{
+        padding-bottom: -3rem;
+        padding-top: 10rem;
+        margin-top: -2rem;
+        display: grid;
+        grid-auto-flow: row;
+        text-align: center;
+        background-color: hsla(0, 0%, 0%, 0.555);
+     }
+
+
+     .club__header, .club__p{
+      font-size: 2.5rem;
+      color: whitesmoke;
+      }
+      .div__cover{
+        background-image: url("../Images/sec.sch\ images\ 5.jfif");
+        background-size: cover;
+        display: inline-block;
+      }
+
+     .CS{
+        background-color: aqua;
+        padding: 5rem 3rem 2rem;
+     }
+     .SG{
+        background-color: rgb(36, 123, 163);
+        padding: 5rem 3rem 2rem;
+     }
+     .LM{
+        background-color: rgb(86, 88, 196);
+        padding: 5rem 3rem 2rem;
+     }
+     .activity{
+        margin: -2rem 3rem;
+        padding: 0.5rem;
+        background-color: blue;
+        display: inline;
+     }
+
+     .activity__flex{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     .activity a{
+        color: whitesmoke;
+          } 
+          .Blog{
+            text-align: center;
+            font-size: 2rem;
+
+          }
+
+          .schdate{
+            display: flex;
+            justify-content: center;
+            }
+
+    .div{
+        line-break: anywhere;
+    } 
+    .back{
+        background-image: linear-gradient(to bottom, whitesmoke, rgb(161, 156, 156)); 
+    }
+    .p__style{
+        background-color: whitesmoke;
+        transform: translateY(-70px);
+        margin: 2rem;
+        padding-left: 1rem;
+        padding-top: 1em;
+        width: 250px;
+        height: 150px;
+        align-items: center;
+    }
+
+ .img__logo{
+    border-radius: 100px;
+ }
+ .orientation{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+ }
+ 
+.footer__h2{
+    color: rgb(21, 22, 61);
+    margin: 1.5rem;
+    font-size: 1.5rem;
+}
+.links{
+  
+    text-decoration: none;
+    margin-left: 1.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1rem;
+    }
+
+    .links a{
+        text-decoration: none;
+        color: black;
+    }
+    .links a:hover,:focus{
+        color: rgb(46, 46, 97);
+    }
+    .para p{
+        font-size:large;
+        margin-left: 1rem;
+    }
+    .div__footer{
+        margin-left: 1.5rem;
+        font-size: larger;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .input{
+        border: black solid 2px;
+        border-radius: 0.5rem;
+        display: block;
+        width: 50%;
+        padding: 2em;
+    }
+    
+    .fin__foot{
+        background-color: rgb(4, 4, 53);
+        padding: 2rem;
+        text-align: center;
+        color: whitesmoke;
+        font-size: larger;
+    }
+
+    /* MEDIA QUERY . HEADER*/
+     
+    /* @media screen and (max-width: 414px){
+            .schdate{
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            align-items: center;
+            }
+      } */
+
+    
+
+
+  
+  
+  
+  
+  
+    
+     
+   
+ 
+
+  

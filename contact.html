@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="this contains info about Contact">
+    <meta name="author" content="Kris da boss">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CSS/project copy.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Little Taco shop</h1>
+    <nav aria-label="primary-navigation" class="header__nav">
+
+    <ul class="header__ul">
+        <li><a href="project.html">Home</a></li>
+
+        <li><a href="/#menu">Our Menu</a></li>
+
+        <li><a href="hours.html">LTS Shop Hours</a></li>
+
+        <li><a href="about.html">About Us</a></li>
+
+    </ul>
+    </nav>
+</header>
+<section class="hero">
+    <figure>
+        <img src="images/Taco services.png" alt="snacks and drinks" title="Ready to eat!" width="1000" height="649">
+        <figcaption class="offscreen">meat pie pizza</figcaption>
+        </figure>
+</section>
+<main class="main">
+    
+    <article class="main__article">
+        <h2>Our location</h2>
+        <address>No 12 CBN Estate,block d2,Enugu</address>
+        <p>phone: <a href="tel:08134211169">08134211169</a></p>
+        <p><a href="#">Back To Top</a></p>
+        </article>
+        <hr>
+
+    <article class="main__article contact"> 
+    <h2 class="contact__1">Our contact Form</h2>
+<form action="http://httpbin.org/get" method="get" class="contact__form">
+
+    <fieldset class="contact__fieldset">
+    <legend class="offscreen">Send Us A Messege</legend>
+    <p class="contact__p">
+        <label  class="contact__label" for="Full Name">Name:</label>
+    <input class="contact__input" type="text" placeholder="Type Name" autocomplete="on" required autofocus></p>
+    <p class="contact__p">
+        <label  class="contact__label" for="Email">Email:</label>
+    <input class="contact__input" type="email" placeholder="Your Email">
+    </p>
+    <p class="contact__p">
+        <label  class="contact__lebel for="Message">Type Message</label><br>
+    <textarea class="contact__textarea" name="Message" id="Message" cols="30" rows="10" placeholder="Type In Your Message"></textarea>
+</p>
+</fieldset>
+    <br>
+    <button class="contact__button" type="submit">Submit</button class="contact__button">
+    <button class="contact__button" type="submit" formaction="post" formmethod="post">Post</button class="contact__button">
+    <button class="contact__button" type="reset">Reset</button>
+</form>
+</article>
+
+</main>
+<footer class="footer">
+    <p>
+        <span class="nowrap">Copyright &copy;<time id="year"></time> </span> 
+       <span class="nowrap">Little Taco Shop</span>
+    </p>
+</footer>
+
+    
+</body>
+</html>

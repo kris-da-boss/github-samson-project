@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
+/* ||RESET */
+
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+/* ||GENERAL STYLE */
+
+/* body{
+    font: 1.5rem "roboto", sans-serif;
+    min-height: 100vh;
+    background-image: radial-gradient(whitesmoke,blue);
+  
+}
+
+    h1{
+        background-image: radial-gradient(whitesmoke, #475569);
+        color: white;
+        }
+
+   footer{background-image: radial-gradient(whitesmoke, #475569);
+    color: #fff;
+}
+.Daddy img{ border: solid black 2px;
+    border-radius: 125px;
+    margin: 30px;}
+    .Best img{
+        border: solid black 2px;
+        border-radius: 125px;
+        margin: 30px;}
+        .Family img{
+            border: solid black 2px;
+        border-radius: 125px;
+        margin: 30px;
+        }
+    section{
+        border: black solid 2px;
+        border-radius: 1rem;
+        width: 19rem;
+        display: grid;
+        place-content:center;
+        grid-template-columns: 100%;
+        text-align: center;
+ }
+ */
+    
